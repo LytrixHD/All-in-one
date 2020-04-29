@@ -34,10 +34,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\Documents\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>${workspaceFolder}\Checker by RequestFX\Checker by RequestFX\bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="Leaf.xNet">
-      <HintPath>..\..\..\..\Documents\Leaf.xNet_v5.2.6__NET_Framework_4.5\Leaf.xNet.dll</HintPath>
+      <HintPath>${workspaceFolder}\Checker by RequestFX\Checker by RequestFX\bin\Debug\Leaf.xNet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
