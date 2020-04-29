@@ -4,3 +4,5 @@ Checker by RequestFX/Checker by RequestFX/.vs/Checker by RequestFX/v16/.suo
 Checker by RequestFX/Checker by RequestFX/obj/Debug/Checker by RequestFX.csprojAssemblyReference.cache
 .vs/slnx.sqlite
 *.sqlite
+*.sqlite-journal
+*.sqlite
