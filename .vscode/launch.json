@@ -26,7 +26,7 @@
             "WARNING16": "button at the bottom of this file.",
             "WARNING17": "*********************************************************************************",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Checker by RequestFX/Checker by RequestFX/bin/Debug/Checker by RequestFX.exe",
+            "program": "${workspaceFolder}/All-in-one/Checker by RequestFX/Checker by RequestFX/bin/Debug/Checker by RequestFX.exe",
             "args": [],
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
