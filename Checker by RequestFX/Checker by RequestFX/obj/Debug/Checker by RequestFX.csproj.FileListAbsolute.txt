@@ -1,0 +1,3 @@
+C:\Users\lytri\Source\Repos\LytrixHD\All-in-one\Checker by RequestFX\Checker by RequestFX\obj\Debug\Checker by RequestFX.csprojAssemblyReference.cache
+C:\Users\lytri\Source\Repos\LytrixHD\All-in-one\Checker by RequestFX\Checker by RequestFX\obj\Debug\Checker_by_RequestFX.Form1.resources
+C:\Users\lytri\Source\Repos\LytrixHD\All-in-one\Checker by RequestFX\Checker by RequestFX\obj\Debug\Checker by RequestFX.csproj.GenerateResource.cache
