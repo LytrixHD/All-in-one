@@ -55,6 +55,10 @@
             this.Threadnum = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.DragTop = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Header = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.minimize = new Bunifu.Framework.UI.BunifuImageButton();
+            this.close = new Bunifu.Framework.UI.BunifuImageButton();
             this.Good = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Bad = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Rainbowcycle = new System.Windows.Forms.Timer(this.components);
@@ -70,20 +74,17 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Timer = new System.Windows.Forms.Timer(this.components);
             this.Exit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.NordVPN = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.minimize = new Bunifu.Framework.UI.BunifuImageButton();
-            this.close = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AccountList)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AccountList)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // RequestFX
@@ -503,6 +504,58 @@
             this.Header.Size = new System.Drawing.Size(1200, 40);
             this.Header.TabIndex = 29;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Checker_by_RequestFX.Properties.Resources.pause;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Checker_by_RequestFX.Properties.Resources.play_arrow;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // minimize
+            // 
+            this.minimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.minimize.BackColor = System.Drawing.Color.Transparent;
+            this.minimize.Image = global::Checker_by_RequestFX.Properties.Resources.loeschen;
+            this.minimize.ImageActive = null;
+            this.minimize.Location = new System.Drawing.Point(1132, 6);
+            this.minimize.Name = "minimize";
+            this.minimize.Size = new System.Drawing.Size(25, 25);
+            this.minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.minimize.TabIndex = 27;
+            this.minimize.TabStop = false;
+            this.minimize.Zoom = 20;
+            this.minimize.Click += new System.EventHandler(this.minimize_Click);
+            // 
+            // close
+            // 
+            this.close.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.close.BackColor = System.Drawing.Color.Transparent;
+            this.close.Image = global::Checker_by_RequestFX.Properties.Resources.stornieren;
+            this.close.ImageActive = null;
+            this.close.Location = new System.Drawing.Point(1163, 6);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(25, 25);
+            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close.TabIndex = 26;
+            this.close.TabStop = false;
+            this.close.Zoom = 20;
+            this.close.Click += new System.EventHandler(this.close_Click);
+            // 
             // Good
             // 
             this.Good.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -688,6 +741,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.bunifuFlatButton3);
             this.panel1.Controls.Add(this.Exit);
             this.panel1.Controls.Add(this.NordVPN);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -695,11 +749,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(238, 560);
             this.panel1.TabIndex = 30;
-            // 
-            // Timer
-            // 
-            this.Timer.Interval = 1;
-            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // Exit
             // 
@@ -771,57 +820,44 @@
             this.NordVPN.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NordVPN.Click += new System.EventHandler(this.NordVPN_Click);
             // 
-            // pictureBox2
+            // Timer
             // 
-            this.pictureBox2.Image = global::Checker_by_RequestFX.Properties.Resources.pause;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 31;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
+            this.Timer.Interval = 1;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
-            // pictureBox1
+            // bunifuFlatButton3
             // 
-            this.pictureBox1.Image = global::Checker_by_RequestFX.Properties.Resources.play_arrow;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // minimize
-            // 
-            this.minimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.minimize.BackColor = System.Drawing.Color.Transparent;
-            this.minimize.Image = global::Checker_by_RequestFX.Properties.Resources.loeschen;
-            this.minimize.ImageActive = null;
-            this.minimize.Location = new System.Drawing.Point(1132, 6);
-            this.minimize.Name = "minimize";
-            this.minimize.Size = new System.Drawing.Size(25, 25);
-            this.minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.minimize.TabIndex = 27;
-            this.minimize.TabStop = false;
-            this.minimize.Zoom = 20;
-            this.minimize.Click += new System.EventHandler(this.minimize_Click);
-            // 
-            // close
-            // 
-            this.close.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.close.BackColor = System.Drawing.Color.Transparent;
-            this.close.Image = global::Checker_by_RequestFX.Properties.Resources.stornieren;
-            this.close.ImageActive = null;
-            this.close.Location = new System.Drawing.Point(1163, 6);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(25, 25);
-            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.close.TabIndex = 26;
-            this.close.TabStop = false;
-            this.close.Zoom = 20;
-            this.close.Click += new System.EventHandler(this.close_Click);
+            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(100)))), ((int)(((byte)(210)))));
+            this.bunifuFlatButton3.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton3.BorderRadius = 0;
+            this.bunifuFlatButton3.ButtonText = "About";
+            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton3.Iconimage = global::Checker_by_RequestFX.Properties.Resources.exit;
+            this.bunifuFlatButton3.Iconimage_right = null;
+            this.bunifuFlatButton3.Iconimage_right_Selected = null;
+            this.bunifuFlatButton3.Iconimage_Selected = null;
+            this.bunifuFlatButton3.IconMarginLeft = 20;
+            this.bunifuFlatButton3.IconMarginRight = 0;
+            this.bunifuFlatButton3.IconRightVisible = true;
+            this.bunifuFlatButton3.IconRightZoom = 0D;
+            this.bunifuFlatButton3.IconVisible = true;
+            this.bunifuFlatButton3.IconZoom = 50D;
+            this.bunifuFlatButton3.IsTab = false;
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(0, 458);
+            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
+            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
+            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton3.selected = false;
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(238, 48);
+            this.bunifuFlatButton3.TabIndex = 33;
+            this.bunifuFlatButton3.Text = "About";
+            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // Form1
             // 
@@ -868,12 +904,12 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AccountList)).EndInit();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AccountList)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -924,6 +960,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton NordVPN;
         private System.Windows.Forms.Timer Timer;
         private Bunifu.Framework.UI.BunifuFlatButton Exit;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
     }
 }
 
