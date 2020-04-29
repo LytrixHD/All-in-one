@@ -11,3 +11,5 @@ C:\Users\launc\source\repos\Checker by RequestFX\Checker by RequestFX\obj\Debug\
 C:\Users\launc\source\repos\Checker by RequestFX\Checker by RequestFX\obj\Debug\Checker by RequestFX.csproj.CopyComplete
 C:\Users\launc\source\repos\Checker by RequestFX\Checker by RequestFX\obj\Debug\Checker by RequestFX.exe
 C:\Users\launc\source\repos\Checker by RequestFX\Checker by RequestFX\obj\Debug\Checker by RequestFX.pdb
+C:\Users\lytri\Source\Repos\LytrixHD\All-in-one\Checker by RequestFX\Checker by RequestFX\obj\Debug\Checker by RequestFX.exe
+C:\Users\lytri\Source\Repos\LytrixHD\All-in-one\Checker by RequestFX\Checker by RequestFX\obj\Debug\Checker by RequestFX.pdb

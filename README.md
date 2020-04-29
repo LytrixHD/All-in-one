@@ -5,5 +5,6 @@ This is a x application doing y via the Frameworks Bunifu_UI v1.5.3, Leaf.xNet a
 
 Requirements
 ---
-* .NetFramework v4.8
+* .NetFramework v4.8 & v4.6.2
     https://dotnet.microsoft.com/download/dotnet-framework/net48
+    https://dotnet.microsoft.com/download/dotnet-framework/net462
