@@ -7,7 +7,3 @@ Requirements
 ---
 * .NetFramework v4.8
     https://dotnet.microsoft.com/download/dotnet-framework/net48
-
-
-=======
->>>>>>> 7e494dc29355c5fa73b7fa03447aa2159bdc1b33
