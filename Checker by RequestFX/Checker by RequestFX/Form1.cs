@@ -228,6 +228,7 @@ namespace Checker_by_RequestFX
 
         private void NordVPN_Click(object sender, EventArgs e)
         {
+            Form2.Visible = false;
             //new Form1().AccountList.Rows.Add(
             //        new object[]
             //        {
@@ -239,6 +240,11 @@ namespace Checker_by_RequestFX
         private void Exit_Click(object sender, EventArgs e)
         {
             Environment.Exit(Environment.ExitCode);
+        }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            Form2.Visible = true;
         }
     }
 }
