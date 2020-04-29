@@ -28,7 +28,7 @@ namespace Checker_by_RequestFX
                 Point pos = new Point(m.LParam.ToInt32());
                 pos = this.PointToClient(pos);
                 if (pos.Y < cCaption)
-                {
+                { 
                     m.Result = (IntPtr)2;
                     return;
                 }
