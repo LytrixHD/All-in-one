@@ -264,7 +264,7 @@ namespace Checker_by_RequestFX
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
             PanelDDOS.Visible = true;
-            PanelAbout.Visible = false;
+            PanelAbout.Visible = true;
         }
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)

@@ -75,7 +75,7 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.PanelMenü = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.DDOSMemüButtom = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.DDOSMenüButton = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ButtonAbout = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Exit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.NordVPN = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -752,7 +752,7 @@
             // 
             this.PanelMenü.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
             this.PanelMenü.Controls.Add(this.panel1);
-            this.PanelMenü.Controls.Add(this.DDOSMemüButtom);
+            this.PanelMenü.Controls.Add(this.DDOSMenüButton);
             this.PanelMenü.Controls.Add(this.ButtonAbout);
             this.PanelMenü.Controls.Add(this.Exit);
             this.PanelMenü.Controls.Add(this.NordVPN);
@@ -769,40 +769,40 @@
             this.panel1.Size = new System.Drawing.Size(959, 557);
             this.panel1.TabIndex = 35;
             // 
-            // DDOSMemüButtom
+            // DDOSMenüButton
             // 
-            this.DDOSMemüButtom.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(100)))), ((int)(((byte)(210)))));
-            this.DDOSMemüButtom.BackColor = System.Drawing.Color.Transparent;
-            this.DDOSMemüButtom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DDOSMemüButtom.BorderRadius = 0;
-            this.DDOSMemüButtom.ButtonText = "   DDOS";
-            this.DDOSMemüButtom.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.DDOSMemüButtom.DisabledColor = System.Drawing.Color.Gray;
-            this.DDOSMemüButtom.Iconcolor = System.Drawing.Color.Transparent;
-            this.DDOSMemüButtom.Iconimage = global::Checker_by_RequestFX.Properties.Resources.DDOS1;
-            this.DDOSMemüButtom.Iconimage_right = null;
-            this.DDOSMemüButtom.Iconimage_right_Selected = null;
-            this.DDOSMemüButtom.Iconimage_Selected = null;
-            this.DDOSMemüButtom.IconMarginLeft = 20;
-            this.DDOSMemüButtom.IconMarginRight = 0;
-            this.DDOSMemüButtom.IconRightVisible = true;
-            this.DDOSMemüButtom.IconRightZoom = 0D;
-            this.DDOSMemüButtom.IconVisible = true;
-            this.DDOSMemüButtom.IconZoom = 50D;
-            this.DDOSMemüButtom.IsTab = true;
-            this.DDOSMemüButtom.Location = new System.Drawing.Point(0, 50);
-            this.DDOSMemüButtom.Name = "DDOSMemüButtom";
-            this.DDOSMemüButtom.Normalcolor = System.Drawing.Color.Transparent;
-            this.DDOSMemüButtom.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
-            this.DDOSMemüButtom.OnHoverTextColor = System.Drawing.Color.White;
-            this.DDOSMemüButtom.selected = false;
-            this.DDOSMemüButtom.Size = new System.Drawing.Size(238, 48);
-            this.DDOSMemüButtom.TabIndex = 34;
-            this.DDOSMemüButtom.Text = "   DDOS";
-            this.DDOSMemüButtom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DDOSMemüButtom.Textcolor = System.Drawing.Color.White;
-            this.DDOSMemüButtom.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DDOSMemüButtom.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
+            this.DDOSMenüButton.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(100)))), ((int)(((byte)(210)))));
+            this.DDOSMenüButton.BackColor = System.Drawing.Color.Transparent;
+            this.DDOSMenüButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DDOSMenüButton.BorderRadius = 0;
+            this.DDOSMenüButton.ButtonText = "   DDOS";
+            this.DDOSMenüButton.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.DDOSMenüButton.DisabledColor = System.Drawing.Color.Gray;
+            this.DDOSMenüButton.Iconcolor = System.Drawing.Color.Transparent;
+            this.DDOSMenüButton.Iconimage = global::Checker_by_RequestFX.Properties.Resources.DDOS1;
+            this.DDOSMenüButton.Iconimage_right = null;
+            this.DDOSMenüButton.Iconimage_right_Selected = null;
+            this.DDOSMenüButton.Iconimage_Selected = null;
+            this.DDOSMenüButton.IconMarginLeft = 20;
+            this.DDOSMenüButton.IconMarginRight = 0;
+            this.DDOSMenüButton.IconRightVisible = true;
+            this.DDOSMenüButton.IconRightZoom = 0D;
+            this.DDOSMenüButton.IconVisible = true;
+            this.DDOSMenüButton.IconZoom = 50D;
+            this.DDOSMenüButton.IsTab = true;
+            this.DDOSMenüButton.Location = new System.Drawing.Point(0, 50);
+            this.DDOSMenüButton.Name = "DDOSMenüButton";
+            this.DDOSMenüButton.Normalcolor = System.Drawing.Color.Transparent;
+            this.DDOSMenüButton.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
+            this.DDOSMenüButton.OnHoverTextColor = System.Drawing.Color.White;
+            this.DDOSMenüButton.selected = false;
+            this.DDOSMenüButton.Size = new System.Drawing.Size(238, 48);
+            this.DDOSMenüButton.TabIndex = 31;
+            this.DDOSMenüButton.Text = "   DDOS";
+            this.DDOSMenüButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DDOSMenüButton.Textcolor = System.Drawing.Color.White;
+            this.DDOSMenüButton.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DDOSMenüButton.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
             // 
             // ButtonAbout
             // 
@@ -984,7 +984,6 @@
             this.PanelAbout.Name = "PanelAbout";
             this.PanelAbout.Size = new System.Drawing.Size(962, 560);
             this.PanelAbout.TabIndex = 31;
-            this.PanelAbout.Visible = false;
             this.PanelAbout.Paint += new System.Windows.Forms.PaintEventHandler(this.Form2_Paint);
             // 
             // PanelDDOS
@@ -993,7 +992,7 @@
             this.PanelDDOS.Location = new System.Drawing.Point(0, 0);
             this.PanelDDOS.Name = "PanelDDOS";
             this.PanelDDOS.Size = new System.Drawing.Size(962, 560);
-            this.PanelDDOS.TabIndex = 36;
+            this.PanelDDOS.TabIndex = 31;
             this.PanelDDOS.Paint += new System.Windows.Forms.PaintEventHandler(this.DDOSPanel_Paint);
             // 
             // MainForm
@@ -1101,7 +1100,7 @@
         private System.Windows.Forms.Timer Timer;
         private Bunifu.Framework.UI.BunifuFlatButton Exit;
         private Bunifu.Framework.UI.BunifuFlatButton ButtonAbout;
-        private Bunifu.Framework.UI.BunifuFlatButton DDOSMemüButtom;
+        private Bunifu.Framework.UI.BunifuFlatButton DDOSMenüButton;
         private System.Windows.Forms.Panel PanelAbout;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
