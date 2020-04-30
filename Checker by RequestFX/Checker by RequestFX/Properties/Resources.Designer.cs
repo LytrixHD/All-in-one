@@ -61,12 +61,22 @@ namespace Checker_by_RequestFX.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] Bunifu_UI_v1_5_3 {
+        internal static System.Drawing.Bitmap DDOS {
             get {
-                object obj = ResourceManager.GetObject("Bunifu_UI_v1_5_3", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("DDOS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DDoS_website_webpage_bomb_virus_protection_512 {
+            get {
+                object obj = ResourceManager.GetObject("DDoS_website_webpage_bomb_virus_protection-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -107,16 +117,6 @@ namespace Checker_by_RequestFX.Properties {
             get {
                 object obj = ResourceManager.GetObject("info", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] Leaf_xNet {
-            get {
-                object obj = ResourceManager.GetObject("Leaf_xNet", resourceCulture);
-                return ((byte[])(obj));
             }
         }
         
