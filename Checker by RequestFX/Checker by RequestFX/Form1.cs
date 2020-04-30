@@ -261,5 +261,15 @@ namespace Checker_by_RequestFX
         {
 
         }
+
+        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.gg/jcJhDFG");
+        }
+
+        private void bunifuFlatButton5_Click_1(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://discord.gg/jcJhDFG");
+        }
     }
 }

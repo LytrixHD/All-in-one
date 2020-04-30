@@ -118,5 +118,8 @@
   <ItemGroup>
     <None Include="Resources\DDOS1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Discord.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
