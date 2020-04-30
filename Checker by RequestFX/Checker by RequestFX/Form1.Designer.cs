@@ -842,7 +842,7 @@
             this.NordVPN.IconVisible = true;
             this.NordVPN.IconZoom = 50D;
             this.NordVPN.IsTab = true;
-            this.NordVPN.Location = new System.Drawing.Point(0, 95);
+            this.NordVPN.Location = new System.Drawing.Point(0, 0);
             this.NordVPN.Name = "NordVPN";
             this.NordVPN.Normalcolor = System.Drawing.Color.Transparent;
             this.NordVPN.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
