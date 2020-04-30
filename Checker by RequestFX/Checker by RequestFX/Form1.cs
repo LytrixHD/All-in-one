@@ -15,6 +15,7 @@ namespace Checker_by_RequestFX
         {
             InitializeComponent();
             Threadnum.Text = "50";
+            Form2.Location = new Point(238, 40);
             this.SetStyle(ControlStyles.ResizeRedraw, true);
         }
 
@@ -270,6 +271,15 @@ namespace Checker_by_RequestFX
         private void bunifuFlatButton5_Click_1(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://discord.gg/jcJhDFG");
+        }
+
+        private void Form2_Paint(object sender, PaintEventArgs e)
+        {
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
