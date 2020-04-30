@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Checker_by_RequestFX
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             //AppDomain.CurrentDomain.AssemblyResolve += (sender, args) =>
             //{
@@ -26,7 +26,8 @@ namespace Checker_by_RequestFX
             //};
             InitializeComponent();
             Threadnum.Text = "50";
-            Form2.Location = new Point(238, 40);
+            AboutPanel.Location = new Point(238, 40);
+            DDOSPanel.Location = new Point(238, 40);
             this.SetStyle(ControlStyles.ResizeRedraw, true);
             DllLoader();
         }
@@ -245,7 +246,8 @@ namespace Checker_by_RequestFX
 
         private void NordVPN_Click(object sender, EventArgs e)
         {
-            Form2.Visible = false;
+            AboutPanel.Visible = false;
+            DDOSPanel.Visible = false;
             //new Form1().AccountList.Rows.Add(
             //        new object[]
             //        {
@@ -261,7 +263,8 @@ namespace Checker_by_RequestFX
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            Form2.Visible = true;
+            AboutPanel.Visible = true;
+            DDOSPanel.Visible = false;
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
@@ -276,7 +279,8 @@ namespace Checker_by_RequestFX
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
-
+            DDOSPanel.Visible = true;
+            AboutPanel.Visible = false;
         }
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
@@ -296,6 +300,20 @@ namespace Checker_by_RequestFX
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuCustomLabel11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DDOSPanel_Paint(object sender, PaintEventArgs e)
+        { 
         }
     }
 }
