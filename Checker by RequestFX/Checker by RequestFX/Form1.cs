@@ -15,8 +15,8 @@ namespace Checker_by_RequestFX
         {
             InitializeComponent();
             Threadnum.Text = "50";
-            AboutPanel.Location = new Point(238, 40);
-            DDOSPanel.Location = new Point(238, 40);
+            PanelAbout.Location = new Point(238, 40);
+            PanelDDOS.Location = new Point(238, 40);
             this.SetStyle(ControlStyles.ResizeRedraw, true);
         }
 
@@ -230,8 +230,8 @@ namespace Checker_by_RequestFX
 
         private void NordVPN_Click(object sender, EventArgs e)
         {
-            AboutPanel.Visible = false;
-            DDOSPanel.Visible = false;
+            PanelAbout.Visible = false;
+            PanelDDOS.Visible = false;
             //new Form1().AccountList.Rows.Add(
             //        new object[]
             //        {
@@ -247,8 +247,8 @@ namespace Checker_by_RequestFX
 
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
-            AboutPanel.Visible = true;
-            DDOSPanel.Visible = false;
+            PanelAbout.Visible = true;
+            PanelDDOS.Visible = false;
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
@@ -263,8 +263,8 @@ namespace Checker_by_RequestFX
 
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
-            DDOSPanel.Visible = true;
-            AboutPanel.Visible = false;
+            PanelDDOS.Visible = true;
+            PanelAbout.Visible = false;
         }
 
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
