@@ -16,7 +16,7 @@ namespace Checker_by_RequestFX
             InitializeComponent();
             Threadnum.Text = "50";
             PanelAbout.Location = new Point(238, 40);
-            PanelDDOS.Location = new Point(238, 40);
+            PanelDDOS.Location = new Point(0, 0);
             this.SetStyle(ControlStyles.ResizeRedraw, true);
         }
 

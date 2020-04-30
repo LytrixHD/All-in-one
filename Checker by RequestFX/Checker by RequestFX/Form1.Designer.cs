@@ -979,17 +979,16 @@
             this.PanelAbout.Controls.Add(this.bunifuFlatButton5);
             this.PanelAbout.Controls.Add(this.bunifuCustomLabel5);
             this.PanelAbout.Controls.Add(this.bunifuCustomLabel4);
-            this.PanelAbout.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelAbout.Location = new System.Drawing.Point(238, 40);
+            this.PanelAbout.Location = new System.Drawing.Point(1000, 1000);
             this.PanelAbout.Name = "PanelAbout";
             this.PanelAbout.Size = new System.Drawing.Size(962, 560);
             this.PanelAbout.TabIndex = 31;
+            this.PanelAbout.Visible = false;
             this.PanelAbout.Paint += new System.Windows.Forms.PaintEventHandler(this.Form2_Paint);
             // 
             // PanelDDOS
             // 
-            this.PanelDDOS.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelDDOS.Location = new System.Drawing.Point(0, 0);
+            this.PanelDDOS.Location = new System.Drawing.Point(1000, 1000);
             this.PanelDDOS.Name = "PanelDDOS";
             this.PanelDDOS.Size = new System.Drawing.Size(962, 560);
             this.PanelDDOS.TabIndex = 31;
