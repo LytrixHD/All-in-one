@@ -109,5 +109,14 @@
   <ItemGroup>
     <None Include="Resources\info.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DDOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DDoS_website_webpage_bomb_virus_protection-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DDOS1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

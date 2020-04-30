@@ -246,5 +246,20 @@ namespace Checker_by_RequestFX
         {
             Form2.Visible = true;
         }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -55,10 +55,6 @@
             this.Threadnum = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.DragTop = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.Header = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.minimize = new Bunifu.Framework.UI.BunifuImageButton();
-            this.close = new Bunifu.Framework.UI.BunifuImageButton();
             this.Good = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Bad = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Rainbowcycle = new System.Windows.Forms.Timer(this.components);
@@ -74,18 +70,27 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.Form2 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Exit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.NordVPN = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.Timer = new System.Windows.Forms.Timer(this.components);
-            this.Form2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.minimize = new Bunifu.Framework.UI.BunifuImageButton();
+            this.close = new Bunifu.Framework.UI.BunifuImageButton();
             this.Header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AccountList)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.Form2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AccountList)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // RequestFX
@@ -96,9 +101,9 @@
             this.RequestFX.ForeColor = System.Drawing.Color.White;
             this.RequestFX.Location = new System.Drawing.Point(38, 9);
             this.RequestFX.Name = "RequestFX";
-            this.RequestFX.Size = new System.Drawing.Size(141, 20);
+            this.RequestFX.Size = new System.Drawing.Size(98, 20);
             this.RequestFX.TabIndex = 25;
-            this.RequestFX.Text = "All In One Checker";
+            this.RequestFX.Text = "AnixChecker";
             this.RequestFX.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.RequestFX.Click += new System.EventHandler(this.Coder_Click);
             // 
@@ -505,58 +510,6 @@
             this.Header.Size = new System.Drawing.Size(1200, 40);
             this.Header.TabIndex = 29;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Checker_by_RequestFX.Properties.Resources.pause;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 31;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Checker_by_RequestFX.Properties.Resources.play_arrow;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // minimize
-            // 
-            this.minimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.minimize.BackColor = System.Drawing.Color.Transparent;
-            this.minimize.Image = global::Checker_by_RequestFX.Properties.Resources.loeschen;
-            this.minimize.ImageActive = null;
-            this.minimize.Location = new System.Drawing.Point(1132, 6);
-            this.minimize.Name = "minimize";
-            this.minimize.Size = new System.Drawing.Size(25, 25);
-            this.minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.minimize.TabIndex = 27;
-            this.minimize.TabStop = false;
-            this.minimize.Zoom = 20;
-            this.minimize.Click += new System.EventHandler(this.minimize_Click);
-            // 
-            // close
-            // 
-            this.close.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.close.BackColor = System.Drawing.Color.Transparent;
-            this.close.Image = global::Checker_by_RequestFX.Properties.Resources.stornieren;
-            this.close.ImageActive = null;
-            this.close.Location = new System.Drawing.Point(1163, 6);
-            this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(25, 25);
-            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.close.TabIndex = 26;
-            this.close.TabStop = false;
-            this.close.Zoom = 20;
-            this.close.Click += new System.EventHandler(this.close_Click);
-            // 
             // Good
             // 
             this.Good.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -742,6 +695,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.bunifuFlatButton4);
             this.panel1.Controls.Add(this.bunifuFlatButton3);
             this.panel1.Controls.Add(this.Exit);
             this.panel1.Controls.Add(this.NordVPN);
@@ -750,6 +704,93 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(238, 560);
             this.panel1.TabIndex = 30;
+            // 
+            // Timer
+            // 
+            this.Timer.Interval = 1;
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // Form2
+            // 
+            this.Form2.Controls.Add(this.richTextBox1);
+            this.Form2.Controls.Add(this.textBox2);
+            this.Form2.Controls.Add(this.textBox1);
+            this.Form2.Location = new System.Drawing.Point(244, 46);
+            this.Form2.Name = "Form2";
+            this.Form2.Size = new System.Drawing.Size(944, 542);
+            this.Form2.TabIndex = 31;
+            this.Form2.Visible = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(3, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(941, 41);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "This is a Multitool Programmed by RequestFX and Lytrix";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(3, 523);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(941, 19);
+            this.textBox2.TabIndex = 32;
+            this.textBox2.Text = "\r\nFor more usefull information about Updates or for Reporting Buggs come to our D" +
+    "iscord :D https://discord.gg/PqjJhU\r\n";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(3, 50);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(941, 470);
+            this.richTextBox1.TabIndex = 33;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
+            // bunifuFlatButton4
+            // 
+            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(100)))), ((int)(((byte)(210)))));
+            this.bunifuFlatButton4.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton4.BorderRadius = 0;
+            this.bunifuFlatButton4.ButtonText = "   DDOS";
+            this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.bunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton4.Iconimage = global::Checker_by_RequestFX.Properties.Resources.DDOS1;
+            this.bunifuFlatButton4.Iconimage_right = null;
+            this.bunifuFlatButton4.Iconimage_right_Selected = null;
+            this.bunifuFlatButton4.Iconimage_Selected = null;
+            this.bunifuFlatButton4.IconMarginLeft = 20;
+            this.bunifuFlatButton4.IconMarginRight = 0;
+            this.bunifuFlatButton4.IconRightVisible = true;
+            this.bunifuFlatButton4.IconRightZoom = 0D;
+            this.bunifuFlatButton4.IconVisible = true;
+            this.bunifuFlatButton4.IconZoom = 50D;
+            this.bunifuFlatButton4.IsTab = true;
+            this.bunifuFlatButton4.Location = new System.Drawing.Point(3, 50);
+            this.bunifuFlatButton4.Name = "bunifuFlatButton4";
+            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
+            this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton4.selected = false;
+            this.bunifuFlatButton4.Size = new System.Drawing.Size(238, 48);
+            this.bunifuFlatButton4.TabIndex = 34;
+            this.bunifuFlatButton4.Text = "   DDOS";
+            this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton4.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton4.Click += new System.EventHandler(this.bunifuFlatButton4_Click);
             // 
             // bunifuFlatButton3
             // 
@@ -856,18 +897,57 @@
             this.NordVPN.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NordVPN.Click += new System.EventHandler(this.NordVPN_Click);
             // 
-            // Timer
+            // pictureBox2
             // 
-            this.Timer.Interval = 1;
-            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            this.pictureBox2.Image = global::Checker_by_RequestFX.Properties.Resources.pause;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             // 
-            // Form2
+            // pictureBox1
             // 
-            this.Form2.Location = new System.Drawing.Point(244, 46);
-            this.Form2.Name = "Form2";
-            this.Form2.Size = new System.Drawing.Size(944, 542);
-            this.Form2.TabIndex = 31;
-            this.Form2.Visible = false;
+            this.pictureBox1.Image = global::Checker_by_RequestFX.Properties.Resources.play_arrow;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // minimize
+            // 
+            this.minimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.minimize.BackColor = System.Drawing.Color.Transparent;
+            this.minimize.Image = global::Checker_by_RequestFX.Properties.Resources.loeschen;
+            this.minimize.ImageActive = null;
+            this.minimize.Location = new System.Drawing.Point(1132, 6);
+            this.minimize.Name = "minimize";
+            this.minimize.Size = new System.Drawing.Size(25, 25);
+            this.minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.minimize.TabIndex = 27;
+            this.minimize.TabStop = false;
+            this.minimize.Zoom = 20;
+            this.minimize.Click += new System.EventHandler(this.minimize_Click);
+            // 
+            // close
+            // 
+            this.close.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.close.BackColor = System.Drawing.Color.Transparent;
+            this.close.Image = global::Checker_by_RequestFX.Properties.Resources.stornieren;
+            this.close.ImageActive = null;
+            this.close.Location = new System.Drawing.Point(1163, 6);
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(25, 25);
+            this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close.TabIndex = 26;
+            this.close.TabStop = false;
+            this.close.Zoom = 20;
+            this.close.Click += new System.EventHandler(this.close_Click);
             // 
             // Form1
             // 
@@ -915,12 +995,14 @@
             this.Load += new System.EventHandler(this.Main_Load);
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AccountList)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.Form2.ResumeLayout(false);
+            this.Form2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AccountList)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -973,6 +1055,10 @@
         private Bunifu.Framework.UI.BunifuFlatButton Exit;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
         private System.Windows.Forms.Panel Form2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
     }
 }
 
