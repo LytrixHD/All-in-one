@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Net;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -272,6 +273,37 @@ namespace Checker_by_RequestFX
 
         private void DDOSPanel_Paint(object sender, PaintEventArgs e)
         { 
+        }
+
+        private void textBox1_TextChanged_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton3_Click_1(object sender, EventArgs e)
+        {
+            string ip = ip1.Text;
+            string port = port1.Text;
+            string time = time1.Text;
+            string method = methods1.Text;
+
+            MessageBox.Show($"Attack sent to {ip} using port {port} for {time} Second/s");
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void time1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
